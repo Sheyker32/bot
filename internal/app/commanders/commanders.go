@@ -14,7 +14,7 @@ func NewCommander() *Commander {
 	bot, err := tgbotapi.NewBotAPI("5268324809:AAGU0tZ-LNK55jdFmZN5iIaXGDujf78FGeA")
 
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
 	log.Printf("Authorized on account %s", bot.Self.UserName)
 	return &Commander{bot}
